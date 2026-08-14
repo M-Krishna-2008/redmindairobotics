@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedMind AI Robotics — Products | Certified Partner Platforms</title>
+  <meta name="description" content="Explore 56 certified partner platforms integrated with RedMind neural intelligence including DEEP Robotics, Unitree, FRTECH, and HX Robots.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-black text-white selection:bg-red-600 selection:text-white overflow-x-hidden font-sans">
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-700">
+    <div class="flex flex-col items-center gap-5">
+      <div class="logo-glass-halo p-3 mb-2">
+        <img src="assets/website logo.png" alt="RedMind AI Robotics Logo" class="h-16 w-auto object-contain animate-pulse" />
+      </div>
+      <div class="relative w-16 h-16">
+        <div class="absolute inset-0 rounded-full border-2 border-red-500/20 border-t-red-600 animate-spin"></div>
+        <div class="absolute inset-2 rounded-full border-2 border-white/20 border-b-white animate-spin-reverse"></div>
+      </div>
+      <div class="text-center font-mono">
+        <span id="loader-percentage" class="text-2xl font-bold tracking-tighter text-white">0%</span>
+        <p class="text-xs text-neutral-400 tracking-widest uppercase mt-1">Loading Sequence Frames</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Scroll Animation Canvas -->
+  <div id="canvas-container" class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <canvas id="bg-canvas" class="w-full h-full object-cover"></canvas>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <div id="main-wrapper" class="relative z-10 w-full min-h-screen">
+    
+    <!-- Navigation Bar -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-40 px-4 sm:px-10 py-5 flex items-center justify-between transition-all duration-300 pointer-events-auto">
+      
+      <!-- Website Logo with Subtle Glass Halo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="logo-glass-halo">
+          <img src="assets/website logo.png" alt="RedMind AI Robotics Logo" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight font-display text-white group-hover:text-red-500 transition-colors drop-shadow-md">
+            RedMind <span class="text-red-500">AI Robotics</span>
+          </span>
+          <span class="text-[9px] font-mono text-neutral-400 uppercase tracking-widest -mt-1 hidden sm:block">Neural Systems & Integration</span>
+        </div>
+      </a>
+      
+      <nav class="hidden lg:flex items-center gap-7 text-xs sm:text-sm font-semibold tracking-wider uppercase font-mono">
+        <a href="index.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Home</a>
+        <a href="products.html" class="text-red-500 font-bold border-b-2 border-red-500 py-1">Products</a>
+        <a href="services.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Services</a>
+        <a href="industries.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Industries</a>
+        <a href="contact.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="group relative inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-red-600 text-white font-semibold text-xs sm:text-sm hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30">
+        <span>Get in Touch</span>
+        <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+          <svg class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+      </a>
+    </header>
+
+    <!-- Page 2 Products Content (Liquid Glass Effect Overlays) -->
+    <main class="px-4 sm:px-10 pt-32 pb-24 space-y-16">
+      
+      <!-- Hero (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-14 space-y-4 shadow-2xl">
+        <span class="px-3.5 py-1 rounded-full border border-red-500/40 font-mono text-xs font-bold tracking-widest text-red-400 uppercase bg-black/30">
+          OFFICIAL INTEGRATION COMPATIBILITY
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold font-display tracking-tight text-white leading-tight drop-shadow-xl">
+          Our Partner Products
+        </h1>
+        <p class="text-neutral-100 text-lg sm:text-xl leading-relaxed drop-shadow-md max-w-3xl">
+          Explore 56 certified partner platforms integrated with RedMind neural intelligence.
+        </p>
+      </div>
+
+      <!-- Partner Categories (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-6">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-red-400 border-b border-white/15 pb-4">
+          Partner Categories
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          
+          <div class="liquid-glass-card p-6 rounded-2xl text-center">
+            <img src="assets/DEEP Robotics.png" alt="DEEP Robotics" class="h-10 w-auto object-contain mx-auto mb-3" />
+            <span class="text-white font-bold text-lg block font-display">DEEP Robotics</span>
+            <span class="text-red-400 font-mono text-xs font-semibold uppercase">13 Platforms</span>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl text-center">
+            <img src="assets/Unitree Robotics.png" alt="Unitree Robotics" class="h-10 w-auto object-contain mx-auto mb-3" />
+            <span class="text-white font-bold text-lg block font-display">Unitree Robotics</span>
+            <span class="text-red-400 font-mono text-xs font-semibold uppercase">15 Platforms</span>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl text-center">
+            <img src="assets/fairino.png" alt="FRTECH / Fairino" class="h-10 w-auto object-contain mx-auto mb-3" />
+            <span class="text-white font-bold text-lg block font-display">FRTECH / Fairino</span>
+            <span class="text-red-400 font-mono text-xs font-semibold uppercase">13 Platforms</span>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl text-center">
+            <img src="assets/hx robots.png" alt="HX Robots" class="h-10 w-auto object-contain mx-auto mb-3" />
+            <span class="text-white font-bold text-lg block font-display">HX Robots</span>
+            <span class="text-red-400 font-mono text-xs font-semibold uppercase">15 Platforms</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Hardware Compatibility Section & Featured Platform -->
+      <div class="space-y-8">
+        
+        <!-- Hardware Compatibility Section Title -->
+        <div class="liquid-glass rounded-3xl p-8 sm:p-10 space-y-4 shadow-2xl">
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400 block">
+            CERTIFIED PLATFORM INTEGRATION
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">Hardware Compatibility</h2>
+          <p class="text-neutral-200 text-sm sm:text-base max-w-3xl leading-relaxed">
+            Verified hardware compatibility for RedMind neural policy deployment and autonomous teleoperation across all official partner hardware.
+          </p>
+        </div>
+
+        <!-- 4 Hardware Compatibility Partner Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Card 01 — DEEP Robotics -->
+          <div class="liquid-glass rounded-3xl p-8 sm:p-10 space-y-6 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400">Hardware Compatibility</span>
+                <span class="px-3 py-1 rounded-full border border-emerald-500/60 text-emerald-400 text-xs font-mono font-bold uppercase bg-emerald-500/10">100% Certified Integration</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <img src="assets/DEEP Robotics.png" alt="DEEP Robotics Logo" class="h-12 w-auto object-contain" />
+                <h3 class="text-3xl font-extrabold text-white font-display">DEEP Robotics</h3>
+              </div>
+              <p class="text-neutral-100 text-base sm:text-lg leading-relaxed drop-shadow">
+                Verified hardware compatibility for RedMind neural policy deployment and autonomous teleoperation.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/15 flex items-center justify-between text-xs font-mono text-neutral-300">
+              <span>Primary Quadruped Partner</span>
+              <span class="text-red-400 font-bold">13 Verified Models</span>
+            </div>
+          </div>
+
+          <!-- Card 02 — Unitree Robotics -->
+          <div class="liquid-glass rounded-3xl p-8 sm:p-10 space-y-6 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400">Hardware Compatibility</span>
+                <span class="px-3 py-1 rounded-full border border-emerald-500/60 text-emerald-400 text-xs font-mono font-bold uppercase bg-emerald-500/10">100% Certified Integration</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <img src="assets/Unitree Robotics.png" alt="Unitree Robotics Logo" class="h-12 w-auto object-contain" />
+                <h3 class="text-3xl font-extrabold text-white font-display">Unitree Robotics</h3>
+              </div>
+              <p class="text-neutral-100 text-base sm:text-lg leading-relaxed drop-shadow">
+                Verified hardware compatibility for RedMind neural policy deployment and autonomous teleoperation.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/15 flex items-center justify-between text-xs font-mono text-neutral-300">
+              <span>Primary Quadruped Partner</span>
+              <span class="text-red-400 font-bold">15 Verified Models</span>
+            </div>
+          </div>
+
+          <!-- Card 03 — FRTECH / Fairino -->
+          <div class="liquid-glass rounded-3xl p-8 sm:p-10 space-y-6 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400">Hardware Compatibility</span>
+                <span class="px-3 py-1 rounded-full border border-emerald-500/60 text-emerald-400 text-xs font-mono font-bold uppercase bg-emerald-500/10">100% Certified Integration</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <img src="assets/fairino.png" alt="FRTECH / Fairino Logo" class="h-12 w-auto object-contain" />
+                <h3 class="text-3xl font-extrabold text-white font-display">FRTECH / Fairino</h3>
+              </div>
+              <p class="text-neutral-100 text-base sm:text-lg leading-relaxed drop-shadow">
+                Verified hardware compatibility for RedMind neural policy deployment and autonomous teleoperation.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/15 flex items-center justify-between text-xs font-mono text-neutral-300">
+              <span>Primary Quadruped Partner</span>
+              <span class="text-red-400 font-bold">13 Verified Models</span>
+            </div>
+          </div>
+
+          <!-- Card 04 — HX Robots -->
+          <div class="liquid-glass rounded-3xl p-8 sm:p-10 space-y-6 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400">Hardware Compatibility</span>
+                <span class="px-3 py-1 rounded-full border border-emerald-500/60 text-emerald-400 text-xs font-mono font-bold uppercase bg-emerald-500/10">100% Certified Integration</span>
+              </div>
+              <div class="flex items-center gap-4 pt-2">
+                <img src="assets/hx robots.png" alt="HX Robots Logo" class="h-12 w-auto object-contain" />
+                <h3 class="text-3xl font-extrabold text-white font-display">HX Robots</h3>
+              </div>
+              <p class="text-neutral-100 text-base sm:text-lg leading-relaxed drop-shadow">
+                Verified hardware compatibility for RedMind neural policy deployment and autonomous teleoperation.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/15 flex items-center justify-between text-xs font-mono text-neutral-300">
+              <span>Primary Quadruped Partner</span>
+              <span class="text-red-400 font-bold">15 Verified Models</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Featured Platform -->
+        <div class="liquid-glass rounded-3xl p-8 sm:p-10 space-y-6 flex flex-col justify-between mt-8">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400">Featured Platform</span>
+              <span class="px-3 py-1 rounded-full border border-red-500/60 text-red-400 text-xs font-mono font-bold uppercase bg-red-500/10">Certified Operating Model</span>
+            </div>
+            <h3 class="text-3xl font-extrabold text-white font-display">Jueying X30 Substation Patrol</h3>
+            <p class="text-neutral-100 text-base sm:text-lg leading-relaxed drop-shadow">
+              Flagship hardware configuration integrated with RedMind real-time neural vision and trajectory adaptation.
+            </p>
+          </div>
+          <div class="relative aspect-video w-full rounded-2xl overflow-hidden border border-white/20">
+            <img src="assets/Jueying X30 Substation Patrol.jpg" alt="Jueying X30 Substation Patrol" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Product Catalog (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-8">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-white/15 pb-6">
+          <div>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400 block mb-1">
+              Product Catalog
+            </span>
+            <h2 class="text-3xl font-extrabold text-white font-display">DEEP Robotics Product Catalog</h2>
+          </div>
+          <span class="px-4 py-1.5 rounded-full border border-white/30 font-mono text-xs font-bold text-white uppercase bg-black/30">
+            12 Additional Models
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          
+          <!-- 1 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Industrial Inspection.jpg" alt="Jueying X30 Industrial Inspection" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #01</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Industrial Inspection</h3>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Pipeline Inspection.jpg" alt="Jueying X30 Pipeline Inspection" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #02</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Pipeline Inspection</h3>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Fire Fighting Scout.jpg" alt="Jueying X30 Fire Fighting Scout" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #03</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Fire Fighting Scout</h3>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Emergency Rescue.jpg" alt="Jueying X30 Emergency Rescue" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #04</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Emergency Rescue</h3>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Hazardous Reconnaissance.jpg" alt="Jueying X30 Hazardous Reconnaissance" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #05</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Hazardous Reconnaissance</h3>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Obstacle Crossing.jpg" alt="Jueying X30 Obstacle Crossing" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #06</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Obstacle Crossing</h3>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Extinguishing Operation.jpg" alt="Jueying X30 Extinguishing Operation" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #07</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Extinguishing Operation</h3>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Jueying X30 Rugged Terrain Patrol.jpg" alt="Jueying X30 Rugged Terrain Patrol" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #08</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Jueying X30 Rugged Terrain Patrol</h3>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/COBOTS Joint Customization.jpg" alt="COBOTS Joint Customization" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #09</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">COBOTS Joint Customization</h3>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/DEEP Robotics Research Platform.jpg" alt="DEEP Robotics Research Platform" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #10</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">DEEP Robotics Research Platform</h3>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Embodied Humanoid Vision Stack.jpg" alt="Embodied Humanoid Vision Stack" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #11</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Embodied Humanoid Vision Stack</h3>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+            <div class="aspect-[4/3] w-full overflow-hidden relative">
+              <img src="assets/Modular Actuator Assembly.jpg" alt="Modular Actuator Assembly" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-red-400 font-mono text-[10px] font-bold uppercase tracking-widest">Model #12</span>
+              <h3 class="text-base font-bold text-white font-display drop-shadow">Modular Actuator Assembly</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Technical Documentation (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-6">
+        <div class="border-b border-white/15 pb-4">
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400 block mb-1">
+            Downloads
+          </span>
+          <h2 class="text-3xl font-extrabold text-white font-display">
+            Downloadable Technical PDFs & Documentation
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          
+          <a href="assets/DEEP Robotics Company Profile.pdf" target="_blank" download class="liquid-glass-card p-6 rounded-2xl flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-400 border border-red-500/40 flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                PDF
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-base hover:text-red-400 transition-colors drop-shadow">DEEP Robotics Company Profile</h3>
+                <span class="text-xs font-mono text-neutral-400">16.7 MB</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+          </a>
+
+          <a href="assets/DEEP Robotics Lite3 Product Flyer.pdf" target="_blank" download class="liquid-glass-card p-6 rounded-2xl flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-400 border border-red-500/40 flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                PDF
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-base hover:text-red-400 transition-colors drop-shadow">DEEPRobotics Lite3 Product Flyer</h3>
+                <span class="text-xs font-mono text-neutral-400">6.0 MB</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+          </a>
+
+          <a href="assets/DEEP Robotics LYNX M20 Flyer.pdf" target="_blank" download class="liquid-glass-card p-6 rounded-2xl flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-400 border border-red-500/40 flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                PDF
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-base hover:text-red-400 transition-colors drop-shadow">DEEPRobotics LYNX M20 Flyer</h3>
+                <span class="text-xs font-mono text-neutral-400">9.5 MB</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+          </a>
+
+          <a href="assets/DEEP Robotics Jueying X30 Flyer.pdf" target="_blank" download class="liquid-glass-card p-6 rounded-2xl flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-400 border border-red-500/40 flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                PDF
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-base hover:text-red-400 transition-colors drop-shadow">DEEPRobotics Jueying X30 Flyer</h3>
+                <span class="text-xs font-mono text-neutral-400">9.1 MB</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+          </a>
+
+          <a href="assets/DEEP Robotics LYNX M20S Brochure.pdf" target="_blank" download class="liquid-glass-card p-6 rounded-2xl flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-400 border border-red-500/40 flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                PDF
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-base hover:text-red-400 transition-colors drop-shadow">DEEPRobotics LYNX M20s Brochure</h3>
+                <span class="text-xs font-mono text-neutral-400">7.5 MB</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Common Footer -->
+    <footer class="w-full border-t border-white/15 pt-16 pb-12 px-4 sm:px-10 space-y-12 liquid-glass-nav">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-white/15 pb-8">
+        
+        <div class="flex items-center gap-3">
+          <div class="logo-glass-halo">
+            <img src="assets/website logo.png" alt="RedMind AI Robotics Logo" class="h-9 w-auto object-contain" />
+          </div>
+          <span class="text-lg font-extrabold font-display text-white">RedMind AI Robotics</span>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm font-semibold font-mono">
+          <a href="https://www.linkedin.com/company/redmind-ai-robotics/" target="_blank" class="hover:text-red-400 transition-colors">LinkedIn</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.facebook.com/redmindairobotics" target="_blank" class="hover:text-red-400 transition-colors">Facebook</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.instagram.com/redmindtech.ai/?hl=en" target="_blank" class="hover:text-red-400 transition-colors">Instagram</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm">
+        <div class="md:col-span-5 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            COMPANY & SERVICES
+          </span>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-neutral-200 font-medium">
+            <a href="index.html" class="hover:text-white transition-colors">About Us</a>
+            <a href="products.html" class="hover:text-white transition-colors">Products</a>
+            <a href="services.html" class="hover:text-white transition-colors">Services</a>
+            <a href="industries.html" class="hover:text-white transition-colors">Industries</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            Get In Touch
+          </span>
+          <div class="space-y-1 text-neutral-300 text-xs sm:text-sm font-mono leading-relaxed">
+            <p><strong class="text-white">EMAIL INQUIRY:</strong> <a href="mailto:info@redmindtechnologies.com" class="hover:text-red-400 transition-colors">info@redmindtechnologies.com</a></p>
+            <p><strong class="text-white">Phone Number:</strong> +91 88707 34003 | +91 96778 64569</p>
+            <p><strong class="text-white">REGISTERED OFFICE:</strong> No. 9/136, New Street, Vennandur, Rasipuram Taluk, Namakkal District, Tamilnadu, India, Pincode 637505</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400">
+        <span>© 2026 RedMind AI Robotics. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

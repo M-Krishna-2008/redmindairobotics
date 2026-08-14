@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedMind AI Robotics — Services | Data, AI Models, Isaac Sim & Consulting</title>
+  <meta name="description" content="End-to-end robotics & AI engineering services: dataset engineering, quadruped reinforcement learning, NVIDIA Isaac Sim digital twins, and enterprise consulting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/main-ousLesBp.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BBzEi8qB.css">
+</head>
+<body class="bg-black text-white selection:bg-red-600 selection:text-white overflow-x-hidden font-sans">
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-700">
+    <div class="flex flex-col items-center gap-5">
+      <div class="logo-glass-halo p-3 mb-2">
+        <img src="./assets/website%20logo-DF-sevRM.png" alt="RedMind AI Robotics Logo" class="h-16 w-auto object-contain animate-pulse" />
+      </div>
+      <div class="relative w-16 h-16">
+        <div class="absolute inset-0 rounded-full border-2 border-red-500/20 border-t-red-600 animate-spin"></div>
+        <div class="absolute inset-2 rounded-full border-2 border-white/20 border-b-white animate-spin-reverse"></div>
+      </div>
+      <div class="text-center font-mono">
+        <span id="loader-percentage" class="text-2xl font-bold tracking-tighter text-white">0%</span>
+        <p class="text-xs text-neutral-400 tracking-widest uppercase mt-1">Loading Sequence Frames</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Scroll Animation Canvas -->
+  <div id="canvas-container" class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <canvas id="bg-canvas" class="w-full h-full object-cover"></canvas>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <div id="main-wrapper" class="relative z-10 w-full min-h-screen">
+    
+    <!-- Navigation Bar -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-40 px-4 sm:px-10 py-5 flex items-center justify-between transition-all duration-300 pointer-events-auto">
+      
+      <!-- Website Logo with Subtle Glass Halo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="logo-glass-halo">
+          <img src="./assets/website%20logo-DF-sevRM.png" alt="RedMind AI Robotics Logo" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight font-display text-white group-hover:text-red-500 transition-colors drop-shadow-md">
+            RedMind <span class="text-red-500">AI Robotics</span>
+          </span>
+          <span class="text-[9px] font-mono text-neutral-400 uppercase tracking-widest -mt-1 hidden sm:block">Neural Systems & Integration</span>
+        </div>
+      </a>
+      
+      <nav class="hidden lg:flex items-center gap-7 text-xs sm:text-sm font-semibold tracking-wider uppercase font-mono">
+        <a href="index.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Home</a>
+        <a href="products.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Products</a>
+        <a href="services.html" class="text-red-500 font-bold border-b-2 border-red-500 py-1">Services</a>
+        <a href="industries.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Industries</a>
+        <a href="contact.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="group relative inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-red-600 text-white font-semibold text-xs sm:text-sm hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30">
+        <span>Get in Touch</span>
+        <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+          <svg class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+      </a>
+    </header>
+
+    <!-- Page 3 Services Content (Liquid Glass Effect Overlays) -->
+    <main class="px-4 sm:px-10 pt-32 pb-24 space-y-16">
+      
+      <!-- Hero Header -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-14 space-y-4 shadow-2xl">
+        <span class="px-3.5 py-1 rounded-full border border-red-500/40 font-mono text-xs font-bold tracking-widest text-red-400 uppercase bg-black/30">
+          OUR SERVICES
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold font-display tracking-tight text-white leading-tight drop-shadow-xl">
+          End-to-End Robotics & AI Engineering
+        </h1>
+        <p class="text-neutral-100 text-lg sm:text-xl leading-relaxed drop-shadow-md max-w-3xl">
+          Complete cycle robotics development — from real-world data collection to Isaac Sim digital twins and neural edge deployment.
+        </p>
+      </div>
+
+      <!-- Data Collection & Dataset Engineering (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-8">
+        <div class="border-b border-white/15 pb-4">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-display mt-1">Data Collection & Dataset Engineering</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="liquid-glass-card p-8 rounded-2xl space-y-3">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">01.1</span>
+            <h3 class="text-xl font-bold text-white font-display drop-shadow">Synthetic Data Generation</h3>
+            <p class="text-neutral-200 text-sm leading-relaxed drop-shadow">
+              High-fidelity procedural sensor synthesis, domain randomization, and simulated lidar/depth dataset compilation for robust vision models.
+            </p>
+          </div>
+
+          <div class="liquid-glass-card p-8 rounded-2xl space-y-3">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">01.2</span>
+            <h3 class="text-xl font-bold text-white font-display drop-shadow">Human Egocentric Data Collection</h3>
+            <p class="text-neutral-200 text-sm leading-relaxed drop-shadow">
+              First-person vision capture, dexterous hand tracking, and multi-modal sensory dataset collection for imitation learning pipelines.
+            </p>
+          </div>
+
+          <div class="liquid-glass-card p-8 rounded-2xl space-y-3">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">01.3</span>
+            <h3 class="text-xl font-bold text-white font-display drop-shadow">Teleoperation Data Collection</h3>
+            <p class="text-neutral-200 text-sm leading-relaxed drop-shadow">
+              Haptic feedback tele-manipulation, real-time kinematic logging, and expert demonstration recording across diverse physical tasks.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- AI Model Training & Deployment (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-8">
+        <div class="border-b border-white/15 pb-4">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-display mt-1">AI Model Training & Deployment</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">02.1</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">Reinforcement Learning for Quadrupeds</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">Sim-to-real locomotion policies, dynamic terrain adaptation, and disturbance recovery.</p>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">02.2</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">Vision-Language-Action (VLA) Models</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">Zero-shot robotic control, spatial grounding, and natural language command execution.</p>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">02.3</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">World Action Models (WAM)</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">Predictive physics modeling, next-frame world state forecasting, and trajectory planning.</p>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">02.4</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">Model Deployment & Optimization</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">TensorRT compilation, edge NPU acceleration, ONNX runtime quantization, and low latency.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Robotics Simulation & Digital Twins (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-8">
+        <div class="border-b border-white/15 pb-4">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-display mt-1">Robotics Simulation & Digital Twins</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">03.1</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">NVIDIA Isaac Sim Integration</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">GPU-accelerated photorealistic sensor rendering, PhysX 5 dynamics, and benchmark environments.</p>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">03.2</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">VLA Simulation with LeRobot</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">Open-source imitation learning framework integration, policy evaluation, and environment wrappers.</p>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">03.3</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">Physics-Based Simulation</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">Rigorous kinematic constraint validation, stress analysis, and motor torque profiling.</p>
+          </div>
+
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-2">
+            <span class="text-red-400 font-mono text-xs font-bold uppercase">03.4</span>
+            <h3 class="text-lg font-bold text-white font-display drop-shadow">Industrial Digital Twin Development</h3>
+            <p class="text-neutral-200 text-xs leading-relaxed drop-shadow">Real-time telemetry sync, digital asset twin creation, and fleet monitoring environments.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- AI & Robotics Consulting (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-8">
+        <div class="border-b border-white/15 pb-4">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-display mt-1">AI & Robotics Consulting</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-7 gap-6">
+          
+          <!-- Card 01 -->
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-red-400 font-mono text-xs font-bold uppercase">04.1</span>
+              <h3 class="text-lg font-bold text-white font-display drop-shadow">Automation Opportunity Assessment</h3>
+              <p class="text-neutral-300 text-xs leading-relaxed font-normal drop-shadow">
+                Identify automation opportunities by evaluating workflows, operational challenges, and return on investment to determine the most effective AI and robotics solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 02 -->
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-red-400 font-mono text-xs font-bold uppercase">04.2</span>
+              <h3 class="text-lg font-bold text-white font-display drop-shadow">AI & Robotics Solution Design</h3>
+              <p class="text-neutral-300 text-xs leading-relaxed font-normal drop-shadow">
+                Design end-to-end AI and robotics solutions by translating business requirements into scalable system architectures, technology stacks, and implementation plans.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 03 -->
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-red-400 font-mono text-xs font-bold uppercase">04.3</span>
+              <h3 class="text-lg font-bold text-white font-display drop-shadow">Process Analysis & Optimization</h3>
+              <p class="text-neutral-300 text-xs leading-relaxed font-normal drop-shadow">
+                Analyze existing workflows to identify inefficiencies and recommend AI-driven process improvements that enhance productivity, quality, and operational performance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 04 -->
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-red-400 font-mono text-xs font-bold uppercase">04.4</span>
+              <h3 class="text-lg font-bold text-white font-display drop-shadow">Technology Selection & Evaluation</h3>
+              <p class="text-neutral-300 text-xs leading-relaxed font-normal drop-shadow">
+                Evaluate hardware, software, sensors, AI models, and robotics platforms to recommend solutions best suited for technical and business requirements.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 05 -->
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-red-400 font-mono text-xs font-bold uppercase">04.5</span>
+              <h3 class="text-lg font-bold text-white font-display drop-shadow">System Integration Planning</h3>
+              <p class="text-neutral-300 text-xs leading-relaxed font-normal drop-shadow">
+                Plan seamless integration of AI models, robotic systems, enterprise software, industrial automation, and cloud infrastructure for scalable solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 06 -->
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-red-400 font-mono text-xs font-bold uppercase">04.6</span>
+              <h3 class="text-lg font-bold text-white font-display drop-shadow">Proof of Concept (PoC) & Feasibility Studies</h3>
+              <p class="text-neutral-300 text-xs leading-relaxed font-normal drop-shadow">
+                Validate technical feasibility through rapid prototyping, simulations, and proof-of-concept implementations before full-scale production.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 07 -->
+          <div class="liquid-glass-card p-6 rounded-2xl space-y-3 flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-red-400 font-mono text-xs font-bold uppercase">04.7</span>
+              <h3 class="text-lg font-bold text-white font-display drop-shadow">Scaling Roadmaps</h3>
+              <p class="text-neutral-300 text-xs leading-relaxed font-normal drop-shadow">
+                Develop structured scaling roadmaps to expand AI and robotics solutions from pilot projects to enterprise-wide adoption, ensuring performance, reliability, maintainability, and sustainable long-term growth.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Final CTA Section (Solid RedMind Red Card) -->
+      <div class="rounded-3xl bg-red-600 p-10 sm:p-16 text-center text-white shadow-2xl shadow-red-600/30 flex flex-col items-center justify-center space-y-6 my-12">
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display leading-tight tracking-tight drop-shadow-md">
+          Ready to Accelerate Your<br class="hidden sm:inline"/> Automation Strategy?
+        </h2>
+        <p class="text-neutral-100 text-base sm:text-xl leading-relaxed max-w-2xl font-normal drop-shadow">
+          Schedule an enterprise advisory session with our robotics solution architects.
+        </p>
+        <div class="pt-2">
+          <a href="consulting.html" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-black font-bold text-xs sm:text-sm tracking-wider uppercase hover:bg-neutral-100 transition-all shadow-xl">
+            BOOK CONSULTATION
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Common Footer -->
+    <footer class="w-full border-t border-white/15 pt-16 pb-12 px-4 sm:px-10 space-y-12 liquid-glass-nav">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-white/15 pb-8">
+        
+        <div class="flex items-center gap-3">
+          <div class="logo-glass-halo">
+            <img src="./assets/website%20logo-DF-sevRM.png" alt="RedMind AI Robotics Logo" class="h-9 w-auto object-contain" />
+          </div>
+          <span class="text-lg font-extrabold font-display text-white">RedMind AI Robotics</span>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm font-semibold font-mono">
+          <a href="https://www.linkedin.com/company/redmind-ai-robotics/" target="_blank" class="hover:text-red-400 transition-colors">LinkedIn</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.facebook.com/redmindairobotics" target="_blank" class="hover:text-red-400 transition-colors">Facebook</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.instagram.com/redmindtech.ai/?hl=en" target="_blank" class="hover:text-red-400 transition-colors">Instagram</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm">
+        <div class="md:col-span-5 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            COMPANY & SERVICES
+          </span>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-neutral-200 font-medium">
+            <a href="index.html" class="hover:text-white transition-colors">About Us</a>
+            <a href="products.html" class="hover:text-white transition-colors">Products</a>
+            <a href="services.html" class="hover:text-white transition-colors">Services</a>
+            <a href="industries.html" class="hover:text-white transition-colors">Industries</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            Get In Touch
+          </span>
+          <div class="space-y-1 text-neutral-300 text-xs sm:text-sm font-mono leading-relaxed">
+            <p><strong class="text-white">EMAIL INQUIRY:</strong> <a href="mailto:info@redmindtechnologies.com" class="hover:text-red-400 transition-colors">info@redmindtechnologies.com</a></p>
+            <p><strong class="text-white">Phone Number:</strong> +91 88707 34003 | +91 96778 64569</p>
+            <p><strong class="text-white">REGISTERED OFFICE:</strong> No. 9/136, New Street, Vennandur, Rasipuram Taluk, Namakkal District, Tamilnadu, India, Pincode 637505</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400">
+        <span>© 2026 RedMind AI Robotics. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedMind AI Robotics — AI & Robotics Consulting & Advisory</title>
+  <meta name="description" content="Adopting AI and Robotics requires the right strategy, planning, and execution. We help businesses identify automation opportunities, evaluate technologies, and build practical implementation roadmaps that maximize ROI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/main-ousLesBp.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BBzEi8qB.css">
+</head>
+<body class="bg-black text-white selection:bg-red-600 selection:text-white overflow-x-hidden font-sans">
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-700">
+    <div class="flex flex-col items-center gap-5">
+      <div class="logo-glass-halo p-3 mb-2">
+        <img src="./assets/website%20logo-DF-sevRM.png" alt="RedMind AI Robotics Logo" class="h-16 w-auto object-contain animate-pulse" />
+      </div>
+      <div class="relative w-16 h-16">
+        <div class="absolute inset-0 rounded-full border-2 border-red-500/20 border-t-red-600 animate-spin"></div>
+        <div class="absolute inset-2 rounded-full border-2 border-white/20 border-b-white animate-spin-reverse"></div>
+      </div>
+      <div class="text-center font-mono">
+        <span id="loader-percentage" class="text-2xl font-bold tracking-tighter text-white">0%</span>
+        <p class="text-xs text-neutral-400 tracking-widest uppercase mt-1">Loading Sequence Frames</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Scroll Animation Canvas -->
+  <div id="canvas-container" class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <canvas id="bg-canvas" class="w-full h-full object-cover"></canvas>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <div id="main-wrapper" class="relative z-10 w-full min-h-screen flex flex-col justify-between">
+    
+    <!-- Navigation Bar (Standard Navbar - No Consulting link added) -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-40 px-4 sm:px-10 py-5 flex items-center justify-between transition-all duration-300 pointer-events-auto">
+      
+      <!-- Website Logo with Subtle Glass Halo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="logo-glass-halo">
+          <img src="./assets/website%20logo-DF-sevRM.png" alt="RedMind AI Robotics Logo" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight font-display text-white group-hover:text-red-500 transition-colors drop-shadow-md">
+            RedMind <span class="text-red-500">AI Robotics</span>
+          </span>
+          <span class="text-[9px] font-mono text-neutral-400 uppercase tracking-widest -mt-1 hidden sm:block">Neural Systems & Integration</span>
+        </div>
+      </a>
+      
+      <nav class="hidden lg:flex items-center gap-7 text-xs sm:text-sm font-semibold tracking-wider uppercase font-mono">
+        <a href="index.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Home</a>
+        <a href="products.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Products</a>
+        <a href="services.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Services</a>
+        <a href="industries.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Industries</a>
+        <a href="contact.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="group relative inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-red-600 text-white font-semibold text-xs sm:text-sm hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30">
+        <span>Get in Touch</span>
+        <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+          <svg class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+      </a>
+    </header>
+
+    <!-- Consulting / Advisory Main Content Block -->
+    <main class="px-4 sm:px-10 pt-32 pb-24 space-y-12 max-w-4xl mx-auto w-full">
+      
+      <!-- Hero Section Card -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-14 space-y-6 shadow-2xl">
+        <span class="px-3.5 py-1.5 rounded-full border border-red-500/40 font-mono text-xs font-bold tracking-widest text-red-400 uppercase bg-black/40 inline-block">
+          TURN AUTOMATION IDEAS INTO BUSINESS RESULTS
+        </span>
+        
+        <h1 class="text-4xl sm:text-6xl font-extrabold font-display tracking-tight text-white leading-tight drop-shadow-xl">
+          AI & Robotics Consulting & Advisory
+        </h1>
+
+        <p class="text-neutral-100 text-lg sm:text-xl leading-relaxed drop-shadow-md font-normal">
+          Adopting AI and Robotics requires the right strategy, planning, and execution. We help businesses identify automation opportunities, evaluate technologies, and build practical implementation roadmaps that maximize ROI.
+        </p>
+      </div>
+
+      <!-- Consultation Form Card -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-12 space-y-8 shadow-2xl">
+        <div class="space-y-2 border-b border-white/15 pb-6">
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400 block">
+            ADVISORY INTAKE
+          </span>
+          <h2 class="text-3xl font-extrabold text-white font-display">Book Feasibility Consultation</h2>
+          <p class="text-neutral-300 text-sm leading-relaxed drop-shadow">
+            Provide your details to initiate an automation assessment.
+          </p>
+        </div>
+
+        <form id="advisory-form" class="space-y-6">
+          
+          <!-- 2-Column Grid for first 4 fields on desktop -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- Field 1 -->
+            <div class="space-y-2">
+              <label for="work-name-title" class="text-xs font-mono text-neutral-300 font-bold uppercase block">
+                WORK NAME & TITLE *
+              </label>
+              <input type="text" id="work-name-title" required placeholder="Alex Mercer, VP Engineering" class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors" />
+            </div>
+
+            <!-- Field 2 -->
+            <div class="space-y-2">
+              <label for="work-email-consulting" class="text-xs font-mono text-neutral-300 font-bold uppercase block">
+                WORK EMAIL *
+              </label>
+              <input type="email" id="work-email-consulting" required placeholder="alex@enterprise.com" class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors" />
+            </div>
+
+            <!-- Field 3 -->
+            <div class="space-y-2">
+              <label for="company-industry" class="text-xs font-mono text-neutral-300 font-bold uppercase block">
+                COMPANY / INDUSTRY
+              </label>
+              <input type="text" id="company-industry" placeholder="Acme Manufacturing" class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors" />
+            </div>
+
+            <!-- Field 4 -->
+            <div class="space-y-2">
+              <label for="consultation-goal" class="text-xs font-mono text-neutral-300 font-bold uppercase block">
+                CONSULTATION GOAL
+              </label>
+              <select id="consultation-goal" class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/80 text-white focus:outline-none focus:border-red-500 transition-colors">
+                <option value="Automation Opportunity Assessment">Automation Opportunity Assessment</option>
+                <option value="AI & Robotics Solution Design">AI & Robotics Solution Design</option>
+                <option value="Process Analysis & Optimization">Process Analysis & Optimization</option>
+                <option value="Technology Selection & Evaluation">Technology Selection & Evaluation</option>
+                <option value="System Integration Planning">System Integration Planning</option>
+                <option value="Proof of Concept (PoC) & Feasibility Studies">Proof of Concept (PoC) & Feasibility Studies</option>
+                <option value="Scaling Roadmaps">Scaling Roadmaps</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Field 5 (Full Width Textarea) -->
+          <div class="space-y-2">
+            <label for="operational-context" class="text-xs font-mono text-neutral-300 font-bold uppercase block">
+              OPERATIONAL CONTEXT / PROJECT DETAILS
+            </label>
+            <textarea id="operational-context" rows="4" placeholder="Describe facility dimensions, manual task bottlenecks, target timeline, and hardware preferences..." class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors resize-none"></textarea>
+          </div>
+
+          <!-- Full Width Submit Button -->
+          <button type="submit" class="w-full py-4 rounded-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm tracking-wider uppercase transition-all duration-300 shadow-xl shadow-red-600/30 flex items-center justify-center gap-3">
+            <span>SUBMIT ADVISORY REQUEST</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </button>
+
+        </form>
+      </div>
+
+    </main>
+
+    <!-- Common Footer -->
+    <footer class="w-full border-t border-white/15 pt-16 pb-12 px-4 sm:px-10 space-y-12 liquid-glass-nav">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-white/15 pb-8">
+        
+        <div class="flex items-center gap-3">
+          <div class="logo-glass-halo">
+            <img src="./assets/website%20logo-DF-sevRM.png" alt="RedMind AI Robotics Logo" class="h-9 w-auto object-contain" />
+          </div>
+          <span class="text-lg font-extrabold font-display text-white">RedMind AI Robotics</span>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm font-semibold font-mono">
+          <a href="https://www.linkedin.com/company/redmind-ai-robotics/" target="_blank" class="hover:text-red-400 transition-colors">LinkedIn</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.facebook.com/redmindairobotics" target="_blank" class="hover:text-red-400 transition-colors">Facebook</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.instagram.com/redmindtech.ai/?hl=en" target="_blank" class="hover:text-red-400 transition-colors">Instagram</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm">
+        <div class="md:col-span-5 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            COMPANY & SERVICES
+          </span>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-neutral-200 font-medium">
+            <a href="index.html" class="hover:text-white transition-colors">About Us</a>
+            <a href="products.html" class="hover:text-white transition-colors">Products</a>
+            <a href="services.html" class="hover:text-white transition-colors">Services</a>
+            <a href="industries.html" class="hover:text-white transition-colors">Industries</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            Get In Touch
+          </span>
+          <div class="space-y-1 text-neutral-300 text-xs sm:text-sm font-mono leading-relaxed">
+            <p><strong class="text-white">EMAIL INQUIRY:</strong> <a href="mailto:info@redmindtechnologies.com" class="hover:text-red-400 transition-colors">info@redmindtechnologies.com</a></p>
+            <p><strong class="text-white">Phone Number:</strong> +91 88707 34003 | +91 96778 64569</p>
+            <p><strong class="text-white">REGISTERED OFFICE:</strong> No. 9/136, New Street, Vennandur, Rasipuram Taluk, Namakkal District, Tamilnadu, India, Pincode 637505</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400">
+        <span>© 2026 RedMind AI Robotics. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

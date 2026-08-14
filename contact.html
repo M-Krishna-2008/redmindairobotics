@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedMind AI Robotics — Contact Us | Enterprise Inquiries & Demos</title>
+  <meta name="description" content="Get in touch with RedMind AI Robotics engineering team. Direct calls, corporate registered office address, and WhatsApp dispatch desk.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-black text-white selection:bg-red-600 selection:text-white overflow-x-hidden font-sans">
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-700">
+    <div class="flex flex-col items-center gap-5">
+      <div class="logo-glass-halo p-3 mb-2">
+        <img src="assets/website logo.png" alt="RedMind AI Robotics Logo" class="h-16 w-auto object-contain animate-pulse" />
+      </div>
+      <div class="relative w-16 h-16">
+        <div class="absolute inset-0 rounded-full border-2 border-red-500/20 border-t-red-600 animate-spin"></div>
+        <div class="absolute inset-2 rounded-full border-2 border-white/20 border-b-white animate-spin-reverse"></div>
+      </div>
+      <div class="text-center font-mono">
+        <span id="loader-percentage" class="text-2xl font-bold tracking-tighter text-white">0%</span>
+        <p class="text-xs text-neutral-400 tracking-widest uppercase mt-1">Loading Sequence Frames</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Scroll Animation Canvas -->
+  <div id="canvas-container" class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <canvas id="bg-canvas" class="w-full h-full object-cover"></canvas>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <div id="main-wrapper" class="relative z-10 w-full min-h-screen">
+    
+    <!-- Navigation Bar -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-40 px-4 sm:px-10 py-5 flex items-center justify-between transition-all duration-300 pointer-events-auto">
+      
+      <!-- Website Logo with Subtle Glass Halo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="logo-glass-halo">
+          <img src="assets/website logo.png" alt="RedMind AI Robotics Logo" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight font-display text-white group-hover:text-red-500 transition-colors drop-shadow-md">
+            RedMind <span class="text-red-500">AI Robotics</span>
+          </span>
+          <span class="text-[9px] font-mono text-neutral-400 uppercase tracking-widest -mt-1 hidden sm:block">Neural Systems & Integration</span>
+        </div>
+      </a>
+      
+      <nav class="hidden lg:flex items-center gap-7 text-xs sm:text-sm font-semibold tracking-wider uppercase font-mono">
+        <a href="index.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Home</a>
+        <a href="products.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Products</a>
+        <a href="services.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Services</a>
+        <a href="industries.html" class="text-white/80 hover:text-red-400 transition-colors py-1">Industries</a>
+        <a href="contact.html" class="text-red-500 font-bold border-b-2 border-red-500 py-1">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="group relative inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-red-600 text-white font-semibold text-xs sm:text-sm hover:bg-red-700 transition-all duration-300 shadow-lg shadow-red-600/30">
+        <span>Get in Touch</span>
+        <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+          <svg class="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+      </a>
+    </header>
+
+    <!-- Page 5 Contact Content (Liquid Glass Effect Overlays) -->
+    <main class="px-4 sm:px-10 pt-32 pb-24 space-y-16">
+      
+      <!-- Hero (Liquid Glass) -->
+      <div class="liquid-glass rounded-3xl p-8 sm:p-14 space-y-4 shadow-2xl">
+        <span class="px-3.5 py-1 rounded-full border border-red-500/40 font-mono text-xs font-bold tracking-widest text-red-400 uppercase bg-black/30">
+          DIRECT CHANNELS & GLOBAL INQUIRY
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold font-display tracking-tight text-white leading-tight drop-shadow-xl">
+          Contact RedMind AI Robotics
+        </h1>
+        <p class="text-neutral-100 text-lg sm:text-xl leading-relaxed drop-shadow-md max-w-3xl">
+          Get in touch with our engineering and partnership teams to explore robotic integration solutions for your enterprise.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Communication Hub (Liquid Glass) -->
+        <div class="lg:col-span-5 liquid-glass rounded-3xl p-8 sm:p-10 space-y-8">
+          <div class="space-y-2 border-b border-white/15 pb-6">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400 block">
+              COMMUNICATION HUB
+            </span>
+            <h2 class="text-3xl font-extrabold text-white font-display">Let's Build the Future Together</h2>
+            <p class="text-neutral-300 text-sm leading-relaxed drop-shadow">
+              Request an enterprise demo and discover how RedMind AI Robotics can transform your operations with neural-linked autonomous systems.
+            </p>
+          </div>
+
+          <!-- Direct Details -->
+          <div class="space-y-6 text-sm">
+            
+            <div class="space-y-1">
+              <span class="text-xs font-mono uppercase text-red-400 font-bold block">📞 Phone</span>
+              <a href="tel:+918870734003" class="text-white font-semibold hover:text-red-400 transition-colors block text-base">+91 88707 34003</a>
+              <a href="tel:+919677864569" class="text-white font-semibold hover:text-red-400 transition-colors block text-base">+91 96778 64569</a>
+            </div>
+
+            <div class="space-y-1">
+              <span class="text-xs font-mono uppercase text-red-400 font-bold block">✉️ Email</span>
+              <a href="mailto:info@redmindtechnologies.com" class="text-white font-semibold hover:text-red-400 transition-colors block text-base">info@redmindtechnologies.com</a>
+            </div>
+
+            <div class="space-y-1">
+              <span class="text-xs font-mono uppercase text-red-400 font-bold block">📍 Corporate Registered Office</span>
+              <p class="text-neutral-200 leading-relaxed">
+                No. 9/136, New Street, Vennandur, Rasipuram Taluk, Namakkal District, Tamilnadu, India, Pincode 637505
+              </p>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="pt-4 border-t border-white/15 space-y-3">
+              <span class="text-xs font-mono uppercase text-neutral-400 block font-bold">Connect with Us</span>
+              <div class="flex flex-wrap items-center gap-3">
+                
+                <a href="https://www.linkedin.com/company/redmind-ai-robotics/" target="_blank" class="px-4 py-2 rounded-full border border-white/30 text-xs font-semibold hover:border-red-500 hover:text-red-400 transition-all">
+                  LinkedIn
+                </a>
+
+                <a href="https://www.facebook.com/redmindairobotics" target="_blank" class="px-4 py-2 rounded-full border border-white/30 text-xs font-semibold hover:border-red-500 hover:text-red-400 transition-all">
+                  Facebook
+                </a>
+
+                <a href="https://www.instagram.com/redmindtech.ai/?hl=en" target="_blank" class="px-4 py-2 rounded-full border border-white/30 text-xs font-semibold hover:border-red-500 hover:text-red-400 transition-all">
+                  Instagram
+                </a>
+
+                <a href="https://wa.me/918870734003" target="_blank" class="px-4 py-2 rounded-full border border-emerald-500/60 text-emerald-400 text-xs font-semibold hover:bg-emerald-500/20 transition-all">
+                  WhatsApp Desk
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Direct Dispatch Form (Liquid Glass) -->
+        <div class="lg:col-span-7 liquid-glass rounded-3xl p-8 sm:p-10 space-y-6">
+          <div class="space-y-1 border-b border-white/15 pb-6">
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-red-400 block">
+              DIRECT DISPATCH FORM
+            </span>
+            <h2 class="text-3xl font-extrabold text-white font-display">Send Us a Message</h2>
+          </div>
+
+          <form id="whatsapp-contact-form" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div class="space-y-2">
+                <label for="full-name" class="text-xs font-mono text-neutral-300 font-bold uppercase block">Full Name *</label>
+                <input type="text" id="full-name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors" />
+              </div>
+
+              <div class="space-y-2">
+                <label for="work-email" class="text-xs font-mono text-neutral-300 font-bold uppercase block">Work Email *</label>
+                <input type="email" id="work-email" required placeholder="john@enterprise.com" class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors" />
+              </div>
+
+            </div>
+
+            <div class="space-y-2">
+              <label for="company-org" class="text-xs font-mono text-neutral-300 font-bold uppercase block">Company / Organization</label>
+              <input type="text" id="company-org" placeholder="Robotics & Industrial Labs Inc." class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors" />
+            </div>
+
+            <div class="space-y-2">
+              <label for="message-goal" class="text-xs font-mono text-neutral-300 font-bold uppercase block">Message / Deployment Goal *</label>
+              <textarea id="message-goal" rows="4" required placeholder="Tell us about your quadruped, hardware, or AI simulation requirements..." class="w-full px-4 py-3 rounded-xl border border-white/30 bg-black/40 text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 transition-colors resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm tracking-wider uppercase transition-all duration-300 shadow-xl shadow-red-600/30 flex items-center justify-center gap-3">
+              <span>SEND MESSAGE VIA WHATSAPP DESK</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Common Footer -->
+    <footer class="w-full border-t border-white/15 pt-16 pb-12 px-4 sm:px-10 space-y-12 liquid-glass-nav">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-white/15 pb-8">
+        
+        <div class="flex items-center gap-3">
+          <div class="logo-glass-halo">
+            <img src="assets/website logo.png" alt="RedMind AI Robotics Logo" class="h-9 w-auto object-contain" />
+          </div>
+          <span class="text-lg font-extrabold font-display text-white">RedMind AI Robotics</span>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm font-semibold font-mono">
+          <a href="https://www.linkedin.com/company/redmind-ai-robotics/" target="_blank" class="hover:text-red-400 transition-colors">LinkedIn</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.facebook.com/redmindairobotics" target="_blank" class="hover:text-red-400 transition-colors">Facebook</a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://www.instagram.com/redmindtech.ai/?hl=en" target="_blank" class="hover:text-red-400 transition-colors">Instagram</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-sm">
+        <div class="md:col-span-5 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            COMPANY & SERVICES
+          </span>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-neutral-200 font-medium">
+            <a href="index.html" class="hover:text-white transition-colors">About Us</a>
+            <a href="products.html" class="hover:text-white transition-colors">Products</a>
+            <a href="services.html" class="hover:text-white transition-colors">Services</a>
+            <a href="industries.html" class="hover:text-white transition-colors">Industries</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-3">
+          <span class="text-xs font-mono uppercase font-bold text-red-400 block tracking-widest">
+            Get In Touch
+          </span>
+          <div class="space-y-1 text-neutral-300 text-xs sm:text-sm font-mono leading-relaxed">
+            <p><strong class="text-white">EMAIL INQUIRY:</strong> <a href="mailto:info@redmindtechnologies.com" class="hover:text-red-400 transition-colors">info@redmindtechnologies.com</a></p>
+            <p><strong class="text-white">Phone Number:</strong> +91 88707 34003 | +91 96778 64569</p>
+            <p><strong class="text-white">REGISTERED OFFICE:</strong> No. 9/136, New Street, Vennandur, Rasipuram Taluk, Namakkal District, Tamilnadu, India, Pincode 637505</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400">
+        <span>© 2026 RedMind AI Robotics. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
